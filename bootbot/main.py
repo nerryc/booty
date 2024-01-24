@@ -8,11 +8,11 @@ def main():
     num_words = get_num_words(text)
     print(f"total number of words found {num_words}")
     chars_dict = get_chars_dict(text)
-    #print(chars_dict)
+    
 
     char_list = [(key, value) for key, value in chars_dict.items() if key.isalpha()]
 
-    # Sort the list
+    
     char_list.sort()
 
     for lines in char_list:
